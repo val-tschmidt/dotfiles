@@ -52,9 +52,9 @@ set title
 set wildmode=longest:full,full
 
 " Maybe?
-set signcolumn=yes:2
-set termguicolors
-set undofile
+" set signcolumn=yes:2
+" set termguicolors
+" set undofile
 
 "------------------------------------------------
 " Key Maps
@@ -129,6 +129,14 @@ endif
 call plug#begin(data_dir . '/plugins')
 
 " source plugin files below
+source ~/.config/nvim/plugins/ctrlp.vim
+source ~/.config/nvim/plugins/nerdtree.vim
+source ~/.config/nvim/plugins/themes/github.vim
+source ~/.config/nvim/plugins/vim/coffeescript.vim
+source ~/.config/nvim/plugins/vim/rails.vim
+source ~/.config/nvim/plugins/vim/slim.vim
+source ~/.config/nvim/plugins/vim/surround.vim
+source ~/.config/nvim/plugins/vim/vue.vim
 
 call plug#end()
 doautocmd User PlugLoaded
