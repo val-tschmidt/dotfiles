@@ -3,8 +3,9 @@
 ]
 
 - link:
-    ~/.gitignore_global: gitignore_global
+    ~/.config/kitty: kitty
     ~/.config/nvim: nvim
+    ~/.gitignore_global: gitignore_global
 
 - shell:
     - [git submodule update --init --recursive, Installing submodules]
