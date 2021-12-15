@@ -5,6 +5,7 @@
 - link:
     ~/.config/kitty: kitty
     ~/.config/nvim: nvim
+    ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
     ~/.zshrc: zshrc
 
