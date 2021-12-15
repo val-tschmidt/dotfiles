@@ -8,6 +8,7 @@
     ~/.gemrc: gemrc
     ~/.gitconfig: gitconfig
     ~/.gitignore_global: gitignore_global
+    ~/.irbrc: irbrc
     ~/.zshrc: zshrc
 
 - shell:
