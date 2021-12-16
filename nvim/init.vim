@@ -132,6 +132,7 @@ call plug#begin(data_dir . '/plugins')
 source ~/.config/nvim/plugins/ctrlp.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/themes/github.vim
+source ~/.config/nvim/plugins/vim/abolish.vim
 source ~/.config/nvim/plugins/vim/coffeescript.vim
 source ~/.config/nvim/plugins/vim/rails.vim
 source ~/.config/nvim/plugins/vim/slim.vim
