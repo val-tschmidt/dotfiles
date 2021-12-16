@@ -134,6 +134,7 @@ source ~/.config/nvim/plugins/themes/github.vim
 source ~/.config/nvim/plugins/vim/airline.vim
 source ~/.config/nvim/plugins/vim/commentary.vim
 source ~/.config/nvim/plugins/vim/coffeescript.vim
+source ~/.config/nvim/plugins/vim/fugitive.vim
 source ~/.config/nvim/plugins/vim/rails.vim
 source ~/.config/nvim/plugins/vim/slim.vim
 source ~/.config/nvim/plugins/vim/surround.vim
