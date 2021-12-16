@@ -129,6 +129,7 @@ call plug#begin(data_dir . '/plugins')
 
 " source plugin files below
 source ~/.config/nvim/plugins/ctrlp.vim
+source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/themes/github.vim
 source ~/.config/nvim/plugins/vim/airline.vim
