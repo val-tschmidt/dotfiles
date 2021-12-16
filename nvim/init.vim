@@ -128,19 +128,19 @@ endif
 call plug#begin(data_dir . '/plugins')
 
 " source plugin files below
+source ~/.config/nvim/plugins/airline.vim
+source ~/.config/nvim/plugins/coffeescript.vim
+source ~/.config/nvim/plugins/commentary.vim
+source ~/.config/nvim/plugins/fugitive.vim
 source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/heritage.vim
+source ~/.config/nvim/plugins/lastplace.vim
 source ~/.config/nvim/plugins/nerdtree.vim
+source ~/.config/nvim/plugins/rails.vim
+source ~/.config/nvim/plugins/slim.vim
+source ~/.config/nvim/plugins/surround.vim
 source ~/.config/nvim/plugins/themes/github.vim
-source ~/.config/nvim/plugins/vim/airline.vim
-source ~/.config/nvim/plugins/vim/commentary.vim
-source ~/.config/nvim/plugins/vim/coffeescript.vim
-source ~/.config/nvim/plugins/vim/fugitive.vim
-source ~/.config/nvim/plugins/vim/lastplace.vim
-source ~/.config/nvim/plugins/vim/rails.vim
-source ~/.config/nvim/plugins/vim/slim.vim
-source ~/.config/nvim/plugins/vim/surround.vim
-source ~/.config/nvim/plugins/vim/vue.vim
+source ~/.config/nvim/plugins/vue.vim
 
 call plug#end()
 doautocmd User PlugLoaded
