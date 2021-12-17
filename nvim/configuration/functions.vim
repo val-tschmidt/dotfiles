@@ -14,3 +14,17 @@ function! <SID>StripTrailingWhitespaces()
     let @/=_s
     call cursor(l, c)
 endfunction
+
+"------------------------------------------------
+" Misc
+"------------------------------------------------
+
+augroup TrailingSpaces
+  autocmd!
+  autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
+augroup END
+
+augroup SqlFiles
+  autocmd!
+  autocmd BufNewFile,BufRead *.diff autocmd! TrailingSpaces
+augroup END

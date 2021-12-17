@@ -18,4 +18,5 @@ Ican
 /config/*.key
 bin/*-local
 logs
+node_modules
 tags

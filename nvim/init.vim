@@ -16,17 +16,3 @@ source ~/.config/nvim/configuration/general.vim
 source ~/.config/nvim/configuration/key_maps.vim
 source ~/.config/nvim/configuration/plugins.vim
 source ~/.config/nvim/configuration/functions.vim
-
-"------------------------------------------------
-" Misc
-"------------------------------------------------
-
-augroup TrailingSpaces
-  autocmd!
-  autocmd BufWritePre * :call <SID>StripTrailingWhitespaces()
-augroup END
-
-augroup SqlFiles
-  autocmd!
-  autocmd BufNewFile,BufRead *.diff autocmd! TrailingSpaces
-augroup END
