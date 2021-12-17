@@ -136,11 +136,12 @@ source ~/.config/nvim/plugins/fzf.vim
 source ~/.config/nvim/plugins/heritage.vim
 source ~/.config/nvim/plugins/lastplace.vim
 source ~/.config/nvim/plugins/nerdtree.vim
+source ~/.config/nvim/plugins/polyglot.vim
 source ~/.config/nvim/plugins/rails.vim
-source ~/.config/nvim/plugins/slim.vim
 source ~/.config/nvim/plugins/surround.vim
-source ~/.config/nvim/plugins/themes/github.vim
 source ~/.config/nvim/plugins/vue.vim
+
+source ~/.config/nvim/plugins/themes/github.vim
 
 call plug#end()
 doautocmd User PlugLoaded
