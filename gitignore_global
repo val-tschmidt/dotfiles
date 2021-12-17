@@ -12,6 +12,7 @@ Ican
 *.swo
 *.swp
 .env.production
+.irb-history
 .irb_history
 .ssh
 /config/*.key
