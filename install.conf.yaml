@@ -12,5 +12,82 @@
     ~/.zshrc: zshrc
 
 - shell:
-    - [git submodule update --init --recursive, Installing submodules]
-    - ["vim +PlugUpdate +PlugClean! +qa", Installing and updating vim plugins]
+    -
+      command: >
+        brew tap homebrew/cask-fonts && brew install font-powerline-symbols
+      description: Install powerline symbols font (used with vim-airline)
+    -
+      command: >
+        brew tap homebrew/cask-fonts && brew install font-hack-nerd-font
+      description: Install nerd-fonts (used with vim-nerdtree)
+    -
+      command: git submodule update --init --recursive
+      description: Install git submodules
+    -
+      command: vim +PlugUpdate +PlugClean! +qa
+      description: Installing and updating vim plugins
+    -
+      command: >
+        if [ -d ~/.oh-my-zsh ]; then
+          echo "oh-my-zsh is installed"
+        else
+          sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        fi
+      description: Install oh-my-zsh
+      stdout: true
+    -
+      command: >
+        if type nvim >/dev/null 2>/dev/null; then
+          echo "nvim is installed"
+        else
+          brew install neovim
+        fi
+      description: Install neovim
+      stdout: true
+    -
+      command: >
+        if type kitty >/dev/null 2>/dev/null; then
+          echo "kitty is installed"
+        else
+          brew install kitty
+        fi
+      description: Install kitty terminal
+      stdout: true
+    -
+      command: >
+        if type fd >/dev/null 2>/dev/null; then
+          echo "fd is installed"
+        else
+          brew install fd
+        fi
+      description: Install fd (telescope.vim dependency)
+      stdout: true
+    -
+      command: >
+        if type rg >/dev/null 2>/dev/null; then
+          echo "ripgrep is installed"
+        else
+          brew install ripgrep
+        fi
+      description: Install ripgrep (telescope.vim dependency)
+      stdout: true
+    -
+      command: >
+        if [ -f ~/.vim/autoload/plug.vim ]; then
+          echo "vimplug for vim installed"
+        else
+          curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+        fi
+      description: Install vimplug for vim
+      stdout: true
+    -
+      command: >
+        if [ -f ~/.local/share/nvim/site/autoload/plug.vim ]; then
+          echo "vimplug for neovim installed"
+        else
+          sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+        fi
+      description: Install vimplug for neovim
+      stdout: true
