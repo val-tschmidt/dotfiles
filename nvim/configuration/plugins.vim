@@ -31,4 +31,5 @@ call plug#end()
 doautocmd User PlugLoaded
 
 " source after plug files below
+source ~/.config/nvim/plugins/after/airline.vim
 source ~/.config/nvim/plugins/after/telescope.vim
