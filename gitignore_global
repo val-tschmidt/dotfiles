@@ -11,6 +11,7 @@ Ican
 
 *.swo
 *.swp
+.env.development
 .env.production
 .irb-history
 .irb_history

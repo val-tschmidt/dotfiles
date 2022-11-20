@@ -20,12 +20,13 @@ source ~/.config/nvim/plugins/heritage.vim
 source ~/.config/nvim/plugins/lastplace.vim
 source ~/.config/nvim/plugins/nerdtree.vim
 source ~/.config/nvim/plugins/rails.vim
+source ~/.config/nvim/plugins/slim-rails.vim
 source ~/.config/nvim/plugins/surround.vim
 source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/treesitter.vim
 source ~/.config/nvim/plugins/vue.vim
 
-source ~/.config/nvim/plugins/themes/github.vim
+source ~/.config/nvim/plugins/themes/iceberg.vim
 
 call plug#end()
 doautocmd User PlugLoaded

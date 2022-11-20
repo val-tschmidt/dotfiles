@@ -34,7 +34,8 @@ set splitright
 set tabstop=2
 set textwidth=80
 set title
-set wildmode=longest:full,full
+set wildmode=list:full
+set wildmenu
 
 " Maybe?
 " set signcolumn=yes:2
