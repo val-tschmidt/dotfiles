@@ -3,7 +3,6 @@
 ]
 
 - link:
-    ~/.config/kitty: kitty
     ~/.config/nvim: nvim
     ~/.gemrc: gemrc
     ~/.gitconfig: gitconfig
