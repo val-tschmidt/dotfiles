@@ -15,4 +15,5 @@
 require('config.general')
 require('config.keymaps')
 require('config.functions')
-require ('config.plugins')
+require('config.plugins')
+require('config.lsp')

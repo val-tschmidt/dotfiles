@@ -14,7 +14,7 @@ vim.keymap.set(
 vim.keymap.set(
   'n',
   '<Leader>vr',
-  '<cmd>source ~/.config/nvim/init.lua',
+  '<cmd>source ~/.config/nvim/init.lua<cr>',
   { desc = 'Reload init.lua file' }
 )
 
