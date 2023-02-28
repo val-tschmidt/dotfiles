@@ -16,7 +16,7 @@ vim.keymap.set(
 vim.keymap.set(
   'n',
   '<Leader>fg',
-  '<cmd>Telescope find_grep<cr>',
+  '<cmd>Telescope live_grep<cr>',
   {
     noremap = true
   }
