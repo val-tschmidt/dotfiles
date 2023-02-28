@@ -45,15 +45,6 @@
       stdout: true
     -
       command: >
-        if type kitty >/dev/null 2>/dev/null; then
-          echo "kitty is installed"
-        else
-          brew install kitty
-        fi
-      description: Install kitty terminal
-      stdout: true
-    -
-      command: >
         if type fd >/dev/null 2>/dev/null; then
           echo "fd is installed"
         else
