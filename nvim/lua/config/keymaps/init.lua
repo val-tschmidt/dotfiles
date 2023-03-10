@@ -1,4 +1,5 @@
 vim.keymap.set('n', '<C-p>', require('telescope.builtin').find_files, { desc = 'Search Files' })
+vim.keymap.set('n', '<leader><leader>', '<c-^>', { desc = 'Quickly jump back to previously open file' })
 
 -- Window navigation
 vim.keymap.set('n', '<C-j>', '<C-w>j')
@@ -14,7 +15,7 @@ require('telescope').setup{
       i = {
         ["<C-j>"] = telescope_actions.move_selection_next,
         ["<C-k>"] = telescope_actions.move_selection_previous,
-      }
+      },
     }
   }
 }
