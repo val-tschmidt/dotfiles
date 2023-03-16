@@ -1,3 +1,6 @@
 return {
-  'cappyzawa/trim.nvim',
+  {
+    'cappyzawa/trim.nvim',
+    opts = {},
+  },
 }
