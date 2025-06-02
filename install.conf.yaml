@@ -9,6 +9,7 @@
     ~/.gitconfig: dotfiles/gitconfig
     ~/.gitignore_global: dotfiles/gitignore_global
     ~/.irbrc: dotfiles/irbrc
+    ~/.config/nvim: nvim
     ~/.zshrc: dotfiles/zshrc
 
 - shell:
@@ -29,4 +30,13 @@
           brew install neovim
         fi
       description: Install NeoVim
+      stdout: true
+    -
+      command: >
+        if [ -d nvim/lua/kickstart ]; then
+          echo 'Kickstart for NeoVim is installed'
+        else
+          git clone https://github.com/nvim-lua/kickstart.nvim.git "${XDG_CONFIG_HOME:-$HOME/.config}"/nvim
+        fi
+      description: Install Kickstart for NeoVim
       stdout: true
