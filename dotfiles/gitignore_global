@@ -1,0 +1,27 @@
+.DS_Store
+.AppleDouble
+.LSOverride
+Ican
+
+# Thumbnails
+._*
+
+# Files that might appear on external disk
+.Trashes
+
+*.log
+*.swo
+*.swp
+.env.development
+.env.production
+.irb-history
+.irb_history
+.ssh
+/config/**/*.key
+bin/*-local
+logs
+node_modules
+tags
+/app/assets/builds
+/public/packs
+/public/packs-test

@@ -1,0 +1,32 @@
+- defaults:
+    link:
+      relink: true
+
+- clean: ['~']
+
+- link:
+    ~/.gemrc: dotfiles/gemrc
+    ~/.gitconfig: dotfiles/gitconfig
+    ~/.gitignore_global: dotfiles/gitignore_global
+    ~/.irbrc: dotfiles/irbrc
+    ~/.zshrc: dotfiles/zshrc
+
+- shell:
+    -
+      command: >
+        if [ -d ~/.oh-my-zsh ]; then
+          echo 'oh-my-zsh is installed'
+        else
+          sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+        fi
+      description: Install oh-my-zsh
+      stdout: true
+    -
+      command: >
+        if type nvim >/dev/null 2>/dev/null; then
+          echo 'NeoVim is installed'
+        else
+          brew install neovim
+        fi
+      description: Install NeoVim
+      stdout: true

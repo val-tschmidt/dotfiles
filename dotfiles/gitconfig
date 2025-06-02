@@ -1,0 +1,16 @@
+# This is Git's per-user configuration file.
+[core]
+  user = Terry Schmidt
+  email = 64600983+val-tschmidt@users.noreply.github.com
+  excludesfile = /Users/tschmidt/.gitignore_global
+[user]
+# Please adapt and uncomment the following lines:
+  name = Terry Schmidt
+  email = 64600983+val-tschmidt@users.noreply.github.com
+  signingkey = FE7ED7FA59C78130
+[pull]
+  rebase = false
+[commit]
+  gpgsign = true
+[init]
+  defaultBranch = main
