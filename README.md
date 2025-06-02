@@ -8,7 +8,3 @@ project.
 
 If you need to make updates to the dotfiles, simply make your changes, commit them, and then re-run
 `./install`.
-
-# Kickstart for NeoVim
-
-
