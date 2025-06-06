@@ -1,4 +1,4 @@
--- Autoformat
+-- Lightweight yet powerful formatter plugin for Neovim
 return { -- Autoformat
 	"stevearc/conform.nvim",
 	event = { "BufWritePre" },

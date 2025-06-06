@@ -9,6 +9,7 @@
         create: true
         glob: true
         path: config/*
+    ~/.editorconfig: dotfiles/editorconfig
     ~/.gemrc: dotfiles/gemrc
     ~/.gitconfig: dotfiles/gitconfig
     ~/.gitignore_global: dotfiles/gitignore_global
