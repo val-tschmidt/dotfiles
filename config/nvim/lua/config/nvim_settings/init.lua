@@ -96,6 +96,11 @@ vim.o.smartindent = false
 -- Set updatetime in milliseconds
 vim.o.updatetime = 250
 
+-- Set the clipboard to use the system clipboard
+vim.schedule(function()
+  vim.o.clipboard = 'unnamedplus'
+end)
+
 -- [[ Basic Keymaps ]]
 
 -- Clear highlights on search when pressing <Esc> in normal mode
