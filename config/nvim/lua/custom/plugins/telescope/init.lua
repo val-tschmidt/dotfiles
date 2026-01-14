@@ -1,5 +1,3 @@
-local actions = require("telescope.actions")
-
 -- Fuzzy Finder (files, lsp, etc)
 return {
 	"nvim-telescope/telescope.nvim",
@@ -25,6 +23,7 @@ return {
 		{ "nvim-tree/nvim-web-devicons", enabled = vim.g.have_nerd_font },
 	},
 	config = function()
+    local actions = require("telescope.actions")
 		-- Telescope is a fuzzy finder that comes with a lot of different things that
 		-- it can fuzzy find! It's more than just a "file finder", it can search
 		-- many different aspects of Neovim, your workspace, LSP, and more!
