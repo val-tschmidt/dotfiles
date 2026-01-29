@@ -7,7 +7,7 @@
 # Please adapt and uncomment the following lines:
   name = Terry Schmidt
   email = 64600983+val-tschmidt@users.noreply.github.com
-  signingkey = 22EEF393360E830E
+  signingkey = 20C41B4900B57A76
 [pull]
   rebase = false
 [commit]
