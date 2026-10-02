@@ -12,7 +12,7 @@ return {
   },
   keys = {
     {
-      "<leader>a",
+      "<leader>pa",
       ":<c-u>ArgonautToggle<cr>",
       desc = "Call ArgonautToggle",
     },

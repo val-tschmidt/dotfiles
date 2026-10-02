@@ -2,6 +2,13 @@ return {
   "github/copilot.vim",
   enabled = true,
   event = "InsertEnter",
+
+  init = function()
+    vim.g.copilot_enabled = true
+    vim.g.copilot_no_tab_map = true
+    vim.g.copilot_assume_mapped = true
+  end,
+
   keys = {
     {
       "<C-j>",
@@ -23,8 +30,5 @@ return {
       mode = "i",
       desc = "Copolit previous suggestion",
     },
-  },
-  opts = {
-    not_tab_map = true,
   },
 }
