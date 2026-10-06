@@ -53,8 +53,31 @@ return {
     },
     {
       "<leader>pr",
-      "<cmd>DiffviewOpen origin/main...HEAD<cr>",
-      desc = "Diffview vs origin/main",
+      function()
+        local current = vim.fn.systemlist({ "git", "rev-parse", "--abbrev-ref", "HEAD" })[1]
+        local branches = vim.fn.systemlist({ "git", "branch", "--format=%(refname:short)" })
+        if vim.v.shell_error ~= 0 then
+          vim.notify("Failed to list local git branches", vim.log.levels.ERROR)
+          return
+        end
+
+        local choices = vim.tbl_filter(function(branch)
+          return branch ~= "" and branch ~= current
+        end, branches)
+
+        if vim.tbl_isempty(choices) then
+          vim.notify("No other local branches to diff against", vim.log.levels.WARN)
+          return
+        end
+
+        vim.ui.select(choices, { prompt = "Diffview vs branch:" }, function(branch)
+          if not branch then
+            return
+          end
+          vim.cmd("DiffviewOpen " .. vim.fn.fnameescape(branch))
+        end)
+      end,
+      desc = "Diffview vs branch",
     },
   },
 }
